@@ -274,7 +274,7 @@ a:hover {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
   border-radius: 6px;
-  width: 373px;
+  width: 26%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +324,7 @@ a:hover {
   border: none;
   display: inline-block;
   padding: 0 16px;
-  color: #444444;
+  color: #1b1b1b;
   font-size: 20px;
 }
 
@@ -348,7 +348,7 @@ a:hover {
 #search-and-profile .profile-icon .notification span {
   padding: 0 3px;
   position: absolute;
-  background-color: #959595;
+  background: #00B4B1;
   color: #FFFFFF;
   top: 0;
   right: -10px;
@@ -1398,7 +1398,7 @@ a:hover {
   color: #444444;
   letter-spacing: 0.26px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .save-change {

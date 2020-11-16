@@ -235,5 +235,80 @@ $(document).click(function (e) {
         $('.input-select-options-1').slideUp(200);
     }
 
+    if (e.target.className !== "text-left input-boxes-selector-1") {
+        $('.input-boxes-selector-option').slideUp(200);
+    }
+
     //console.log(e.target.className)
+})
+
+
+
+
+
+// modified ########################################################
+$('.input-boxes-selector-1').click(function () {
+    if ($('.input-boxes-selector-option').is(':visible')) {
+        $('.input-boxes-selector-option').slideUp(200);
+    } else {
+        $(this).parents('.input-boxes-drop-down-1').find('.input-boxes-selector-option').slideDown(200);
+    }
+})
+
+$('.input-boxes-selector-option input').click(function(){
+    $(this).parents('.input-boxes-drop-down-1').find('.input-boxes-selector-1').val(`${$(this).val()}`)
+})
+
+var registered_address_check = false;
+
+$('.registered-address-check-box').click(function () {
+
+    var first_address = $('.m-registered-address-one');
+    var second_address = $('.m-registered-address-two');
+    var city_address = $('.m-registered-address-city');
+    var state_address = $('.m-registered-address-state');
+    var country_address = $('#m-registered-address-country');
+
+
+    if (!registered_address_check) {
+        $('.c-registered-address-one').val(`${ first_address.val() }`);
+        $('.c-registered-address-two').val(`${ second_address.val() }`);
+        $('.c-registered-address-city').val(`${ city_address.val() }`);
+        $('.c-registered-address-state').val(`${ state_address.val() }`);
+        $('#c-registered-address-country').val(`${ country_address.val() }`);
+
+        first_address.keyup(function () {
+            $('.c-registered-address-one').val(`${ first_address.val() }`);
+        });
+        second_address.keyup(function () {
+            $('.c-registered-address-two').val(`${ second_address.val() }`);
+        });
+        city_address.keyup(function () {
+            $('.c-registered-address-city').val(`${ city_address.val() }`);
+        });
+        state_address.keyup(function () {
+            $('.c-registered-address-state').val(`${ state_address.val() }`);
+        });
+
+        country_address.click(function(){
+            $('#c-registered-address-country').val(`${ country_address.val() }`);
+            console.log($(this).val())
+        });
+
+        registered_address_check = true;
+
+    } else if (registered_address_check) {
+
+        first_address.off('keyup');
+        second_address.off('keyup');
+        city_address.off('keyup');
+        state_address.off('keyup');
+
+        registered_address_check = false;
+    };
+});
+
+
+$('.en-dis-btn-1').click(function(){
+    $(this).toggleClass('en-dis-btn')
 })
