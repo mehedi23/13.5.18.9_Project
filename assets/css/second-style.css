@@ -79,7 +79,7 @@
 
 /* ############### */
 .product-group-body {
-    width: 75%;
+    width: 76.7%;
     background: #FFFFFF;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.06);
     border-radius: 10px;
@@ -413,13 +413,14 @@
 .supplier-nav-list-boxes {
     display: flex;
     align-items: center;
-    width: 18%;
+    width: 19%;
     background: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     padding: 35px 25px;
     margin: 20px 0;
     transition: .5s;
+    cursor: context-menu;
 }
 
 .supplier-nav-list-boxes:hover {
@@ -543,7 +544,7 @@
 }
 
 .supplier-api p span:last-child {
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .supplier-api p {
@@ -653,6 +654,7 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 45px;
+    transition: .3s;
 }
 
 .section-header-1 h3 {
@@ -671,6 +673,7 @@
     display: inline-block;
     margin-left: 10px;
     font-size: 18px;
+    transition: .5s;
 }
 
 .section-header-1 button {
@@ -1041,7 +1044,7 @@
 
 .import-box p {
     font-size: 13px;
-    color: #003F00;
+    color: #676767;
     text-align: center;
 }
 
@@ -1056,7 +1059,7 @@
 }
 
 .cancel-or-continue-btn button {
-    padding: 14px 25px;
+    padding: 10px 25px;
     background-color: #fff;
     font-size: 14px;
     color: #4C4C4C;
@@ -1596,6 +1599,20 @@ td .check-it {
     opacity: .6 !important;
 }
 
+.margin-zero{
+    margin: 0 !important;
+    transition: all .5s;
+}
+
+.rotating-90{
+    transform: rotate( -90deg );
+    transition: all .5s ease-in-out;
+}
+
+.font-wet-normal{
+    font-weight: 400 !important;
+}
+
 
 
 
@@ -1614,7 +1631,7 @@ td .check-it {
     box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.11);
     padding: 10px 0;
     width: 100%;
-    z-index: 9;
+    z-index: 99;
     top: 66px;
     display: none;
 }
@@ -1622,7 +1639,7 @@ td .check-it {
 .input-boxes-selector-option input {
     cursor: pointer !important;
     width: 100%;
-    padding: 10px 12px;
+    padding: 6px 12px;
     font-size: 12px;
     color: #444444;
     letter-spacing: 0.26px;
@@ -1651,4 +1668,8 @@ td .check-it {
     background: #34D9B7;
     border: 1px solid #787878;
     border-radius: 3px;
+}
+
+.section-title-slide-click{
+    cursor: pointer !important;
 }

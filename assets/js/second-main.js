@@ -239,6 +239,10 @@ $(document).click(function (e) {
         $('.input-boxes-selector-option').slideUp(200);
     }
 
+    if( e.target.className !== "fas fa-ellipsis-v catalogues" ){
+        $('.catalogues-option-list').slideUp(200);
+        $('.catalogues-option-icon').removeClass('d-inline')
+    }
     //console.log(e.target.className)
 })
 
@@ -311,4 +315,16 @@ $('.registered-address-check-box').click(function () {
 
 $('.en-dis-btn-1').click(function(){
     $(this).toggleClass('en-dis-btn')
+})
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++
+
+$(".section-title-slide-click").click(function(){
+    $(this).parents('section').find('.section-full-info-wrapper').slideToggle(350);
+    $(this).parents('.section-header-1').toggleClass('margin-zero');
+    $(this).find('span').toggleClass('rotating-90')
 })

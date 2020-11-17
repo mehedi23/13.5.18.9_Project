@@ -168,283 +168,322 @@
             <!-- Supplier Details -->
             <section id="supplier-details" class="section-bg">
                 <div class="section-header-1">
-                    <h3> Supplier Details <span> <i class="fas fa-angle-down"></i> </span></h3>
+                    <h3 class="section-title-slide-click"> Supplier Details <span> <i class="fas fa-angle-down"></i>
+                        </span></h3>
                 </div>
 
-                <div class="suppliers-details-boxes">
+                <div class="section-full-info-wrapper">
+                    <div class="suppliers-details-boxes">
 
-                    <!-- 1 -->
-                    <div class="supplier-wrapper-box">
-                        <div class="input-boxes">
-                            <label for=""> Registered Supplier Name </label>
-                            <input type="text" value="Amazon UAE">
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Trading Name </label>
-                            <input type="text" value="Amazon UAE LLC">
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Company Number </label>
-                            <input type="text" value="34534534">
-                        </div>
-
-                    </div>
-
-                    <div class="br-ling"></div>
-
-                    <!-- 2 -->
-                    <div class="supplier-wrapper-box">
-
-                        <h3 class="registered-address">Registered Address</h3>
-
-                        <div class="input-boxes">
-                            <label for=""> Registered Address 1 </label>
-                            <input type="text" value="World Trade Center Sheikh Zayed Road">
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Registered Address 2 </label>
-                            <input type="text" value="World Trade Center Sheikh Zayed Road">
-                        </div>
-
-                        <div class="bobble-inputs">
+                        <!-- 1 -->
+                        <div class="supplier-wrapper-box">
                             <div class="input-boxes">
-                                <label for=""> City </label>
-                                <input type="text" value="Dubai">
+                                <label for=""> Registered Supplier Name </label>
+                                <input type="text" value="Amazon UAE">
                             </div>
 
                             <div class="input-boxes">
-                                <label for=""> State/Province </label>
-                                <input type="text" value="Dubai">
-                            </div>
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Country </label>
-                            <input type="text" value="United Arab Emirates">
-                            <span>
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="br-ling"></div>
-
-                    <!-- 3 -->
-                    <div class="supplier-wrapper-box">
-
-                        <h3 class="registered-address">Trading Address</h3>
-
-                        <div class="check-box-1">
-                            <div class="check-it">
-                                <span>
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
-                                        fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <span class="check-box-name"> Same as registered address </span>
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Registered Address 1 </label>
-                            <input type="text" value="World Trade Center Sheikh Zayed Road">
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Registered Address 2 </label>
-                            <input type="text" value="World Trade Center Sheikh Zayed Road">
-                        </div>
-
-                        <div class="bobble-inputs">
-                            <div class="input-boxes">
-                                <label for=""> City </label>
-                                <input type="text" value="Dubai">
+                                <label for=""> Trading Name </label>
+                                <input type="text" value="Amazon UAE LLC">
                             </div>
 
                             <div class="input-boxes">
-                                <label for=""> State/Province </label>
-                                <input type="text" value="Dubai">
+                                <label for=""> Company Number </label>
+                                <input type="text" value="34534534">
+                            </div>
+
+                        </div>
+
+                        <div class="br-ling"></div>
+
+                        <!-- 2 -->
+                        <div class="supplier-wrapper-box">
+
+                            <h3 class="registered-address">Registered Address</h3>
+
+                            <div class="input-boxes">
+                                <label for=""> Registered Address 1 </label>
+                                <input class="m-registered-address-one" type="text"
+                                    value="World Trade Center Sheikh Zayed Road">
+                            </div>
+
+                            <div class="input-boxes">
+                                <label for=""> Registered Address 2 </label>
+                                <input class="m-registered-address-two" type="text"
+                                    value="World Trade Center Sheikh Zayed Road">
+                            </div>
+
+                            <div class="bobble-inputs">
+                                <div class="input-boxes">
+                                    <label for=""> City </label>
+                                    <input class="m-registered-address-city" type="text" value="Dubai">
+                                </div>
+
+                                <div class="input-boxes">
+                                    <label for=""> State/Province </label>
+                                    <input class="m-registered-address-state" type="text" value="Dubai">
+                                </div>
+                            </div>
+
+                            <div class="input-boxes-drop-down-1">
+                                <div class="input-boxes">
+                                    <label for=""> Country </label>
+                                    <input class="text-left input-boxes-selector-1" id="m-registered-address-country"
+                                        type="button" value="Powered by MyList">
+                                    <span>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="input-boxes-selector-option">
+                                    <input class="text-left" type="button" value="Predefined Chunks">
+                                    <input class="text-left" type="button" value="Randomised Words">
+                                    <input class="text-left" type="button" value="Therefore Always">
+                                    <input class="text-left" type="button" value="Lorem ipsum">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="input-boxes">
-                            <label for=""> Country </label>
-                            <input type="text" value="United Arab Emirates">
-                            <span>
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
+                        <div class="br-ling"></div>
+
+                        <!-- 3 -->
+                        <div class="supplier-wrapper-box">
+
+                            <h3 class="registered-address">Trading Address</h3>
+
+                            <div class="check-box-1">
+                                <div class="check-it registered-address-check-box">
+                                    <span>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
+                                            fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <span class="check-box-name"> Same as registered address </span>
+                            </div>
+
+                            <div class="input-boxes">
+                                <label for=""> Registered Address 1 </label>
+                                <input class="c-registered-address-one" type="text" value="">
+                            </div>
+
+                            <div class="input-boxes">
+                                <label for=""> Registered Address 2 </label>
+                                <input class="c-registered-address-two" type="text" value="">
+                            </div>
+
+                            <div class="bobble-inputs">
+                                <div class="input-boxes">
+                                    <label for=""> City </label>
+                                    <input class="c-registered-address-city" type="text" value="">
+                                </div>
+
+                                <div class="input-boxes">
+                                    <label for=""> State/Province </label>
+                                    <input class="c-registered-address-state" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="input-boxes-drop-down-1">
+                                <div class="input-boxes">
+                                    <label for=""> Country </label>
+                                    <input class="text-left input-boxes-selector-1" id="c-registered-address-country"
+                                        type="button" value="">
+                                    <span>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="input-boxes-selector-option">
+                                    <input class="text-left" type="button" value="Predefined Chunks">
+                                    <input class="text-left" type="button" value="Randomised Words">
+                                    <input class="text-left" type="button" value="Therefore Always">
+                                    <input class="text-left" type="button" value="Lorem ipsum">
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="br-ling"></div>
+
+                        <!-- 4 -->
+                        <div class="supplier-wrapper-box">
+                            <div class="input-boxes">
+                                <label for=""> Tax ID </label>
+                                <input type="text" value="7436783">
+                            </div>
+
+                            <div class="input-boxes-drop-down-1">
+                                <div class="input-boxes">
+                                    <label for=""> Invoice Cycles </label>
+                                    <input class="text-left input-boxes-selector-1" type="button" value="Monthly">
+                                    <span>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="input-boxes-selector-option">
+                                    <input class="text-left" type="button" value="Predefined Chunks">
+                                    <input class="text-left" type="button" value="Randomised Words">
+                                    <input class="text-left" type="button" value="Therefore Always">
+                                    <input class="text-left" type="button" value="Lorem ipsum">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="br-ling"></div>
-
-                    <!-- 4 -->
-                    <div class="supplier-wrapper-box">
-                        <div class="input-boxes">
-                            <label for=""> Tax ID </label>
-                            <input type="text" value="7436783">
-                        </div>
-
-                        <div class="input-boxes">
-                            <label for=""> Invoice Cycles </label>
-                            <input type="text" value="Monthly">
-                            <span>
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-
                 </div>
+
             </section>
 
 
             <!-- Commercial Contact / Bank Details -->
             <section id="commercial-contact" class="section-bg">
                 <div class="section-header-1">
-                    <h3> Commercial Contact / Bank Details <span> <i class="fas fa-angle-down"></i> </span></h3>
+                    <h3 class="section-title-slide-click"> Commercial Contact / Bank Details <span> <i
+                                class="fas fa-angle-down"></i> </span></h3>
                 </div>
 
-                <div class="commercial-contact-boxes">
-                    <!-- 1 -->
-                    <div class="supplier-wrapper-box">
-                        <div class="input-boxes">
-                            <label for=""> Contact Name </label>
-                            <input type="text" value="Michelle Tria">
+                <div class="section-full-info-wrapper">
+                    <div class="commercial-contact-boxes">
+                        <!-- 1 -->
+                        <div class="supplier-wrapper-box">
+                            <div class="input-boxes">
+                                <label for=""> Contact Name </label>
+                                <input type="text" value="Michelle Tria">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Contact Designation </label>
+                                <input type="text" value="Head of Sales & Marketing">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Email </label>
+                                <input type="text" value="michelle.tria@gmail.com">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Phone Number </label>
+                                <input type="text" value="+971 56 916 8776">
+                            </div>
                         </div>
-                        <div class="input-boxes">
-                            <label for=""> Contact Designation </label>
-                            <input type="text" value="Head of Sales & Marketing">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Email </label>
-                            <input type="text" value="michelle.tria@gmail.com">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Phone Number </label>
-                            <input type="text" value="+971 56 916 8776">
-                        </div>
-                    </div>
 
-                    <div class="br-ling"></div>
+                        <div class="br-ling"></div>
 
-                    <div class="supplier-wrapper-box commercial-table">
-                        <div class="input-boxes ">
-                            <label for=""> Bank Name </label>
-                            <input type="text" value="Standard Chartered Bank">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Branch Name </label>
-                            <input type="text" value="Al-Barsha 1">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Account Number </label>
-                            <input type="text" value="01-9876882599-98">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> IBAN </label>
-                            <input type="text" value="DBX67932537689">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Swift Code </label>
-                            <input type="text" value="DBX6734563">
+                        <div class="supplier-wrapper-box commercial-table">
+                            <div class="input-boxes ">
+                                <label for=""> Bank Name </label>
+                                <input type="text" value="Standard Chartered Bank">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Branch Name </label>
+                                <input type="text" value="Al-Barsha 1">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Account Number </label>
+                                <input type="text" value="01-9876882599-98">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> IBAN </label>
+                                <input type="text" value="DBX67932537689">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Swift Code </label>
+                                <input type="text" value="DBX6734563">
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
 
             <!-- Supplier Contact Details -->
             <section id="supplier-contact-details" class="section-bg">
                 <div class="section-header-1">
-                    <h3> Supplier Contact Details <span> <i class="fas fa-angle-down"></i> </span></h3>
+                    <h3 class="section-title-slide-click"> Supplier Contact Details <span> <i
+                                class="fas fa-angle-down"></i> </span></h3>
                 </div>
 
-                <div class="supplier-contact-details-boxes">
-                    <!-- 1 -->
-                    <div class="supplier-wrapper-box">
-                        <h3 class="registered-address">Finance</h3>
+                <div class="section-full-info-wrapper">
+                    <div class="supplier-contact-details-boxes">
+                        <!-- 1 -->
+                        <div class="supplier-wrapper-box">
+                            <h3 class="registered-address">Finance</h3>
 
-                        <div class="input-boxes">
-                            <label for=""> Full Name </label>
-                            <input type="text" value="Michelle Tria">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Email Address </label>
-                            <input type="text" value="michelle.tria@gmail.com">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Designation </label>
-                            <input type="text" value="Senior Accounts Manager">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Phone Number </label>
-                            <input type="text" value="+971 56 916 8776">
+                            <div class="input-boxes">
+                                <label for=""> Full Name </label>
+                                <input type="text" value="Michelle Tria">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Email Address </label>
+                                <input type="text" value="michelle.tria@gmail.com">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Designation </label>
+                                <input type="text" value="Senior Accounts Manager">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Phone Number </label>
+                                <input type="text" value="+971 56 916 8776">
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="br-ling"></div>
 
-                    <div class="br-ling"></div>
+                        <!-- 2 -->
+                        <div class="supplier-wrapper-box">
 
-                    <!-- 2 -->
-                    <div class="supplier-wrapper-box">
+                            <h3 class="registered-address">Fulfillment</h3>
+                            <div class="input-boxes">
+                                <label for=""> Full Name </label>
+                                <input type="text" value="Michelle Tria">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Email Address </label>
+                                <input type="text" value="michelle.tria@gmail.com">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Designation </label>
+                                <input type="text" value="Senior Accounts Manager">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Phone Number </label>
+                                <input type="text" value="+971 56 916 8776">
+                            </div>
+                        </div>
 
-                        <h3 class="registered-address">Fulfillment</h3>
-                        <div class="input-boxes">
-                            <label for=""> Full Name </label>
-                            <input type="text" value="Michelle Tria">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Email Address </label>
-                            <input type="text" value="michelle.tria@gmail.com">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Designation </label>
-                            <input type="text" value="Senior Accounts Manager">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Phone Number </label>
-                            <input type="text" value="+971 56 916 8776">
-                        </div>
-                    </div>
+                        <div class="br-ling"></div>
 
-                    <div class="br-ling"></div>
+                        <!-- 3 -->
+                        <div class="supplier-wrapper-box">
 
-                    <!-- 3 -->
-                    <div class="supplier-wrapper-box">
-
-                        <h3 class="registered-address">IT Personnnel</h3>
-                        <div class="input-boxes">
-                            <label for=""> Full Name </label>
-                            <input type="text" value="Michelle Tria">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Email Address </label>
-                            <input type="text" value="michelle.tria@gmail.com">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Designation </label>
-                            <input type="text" value="Senior Accounts Manager">
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Phone Number </label>
-                            <input type="text" value="+971 56 916 8776">
+                            <h3 class="registered-address">IT Personnnel</h3>
+                            <div class="input-boxes">
+                                <label for=""> Full Name </label>
+                                <input type="text" value="Michelle Tria">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Email Address </label>
+                                <input type="text" value="michelle.tria@gmail.com">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Designation </label>
+                                <input type="text" value="Senior Accounts Manager">
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Phone Number </label>
+                                <input type="text" value="+971 56 916 8776">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -456,81 +495,85 @@
             <!-- Pricing Details -->
             <section id="pricing-details" class="section-bg">
                 <div class="section-header-1">
-                    <h3> Pricing Details <span> <i class="fas fa-angle-down"></i> </span></h3>
+                    <h3 class="section-title-slide-click"> Pricing Details <span> <i class="fas fa-angle-down"></i>
+                        </span></h3>
                 </div>
 
-                <div class="pricing-details-boxes">
-                    <!-- 1 -->
-                    <div class="supplier-wrapper-box">
-                        <div class="input-boxes">
-                            <label for=""> Rebates/Credits </label>
-                            <input type="text" value="5%">
+                <div class="section-full-info-wrapper">
+                    <div class="pricing-details-boxes">
+                        <!-- 1 -->
+                        <div class="supplier-wrapper-box">
+                            <div class="input-boxes">
+                                <label for=""> Rebates/Credits </label>
+                                <input type="text" value="5%">
+                            </div>
+                            <div class="select-pricing-option">
+                                <div class="option-box-1">
+                                    <div class="check-it">
+                                        <span>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
+                                                fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="check-box-name">Pre-Paid</span>
+                                </div>
+                                <div class="option-box-1">
+                                    <div class="check-it">
+                                        <span>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
+                                                fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="check-box-name">Price Protection</span>
+                                </div>
+                            </div>
+                            <div class="input-boxes">
+                                <label for=""> Tax Information </label>
+                                <input type="text" value="156 916 8776">
+                            </div>
                         </div>
-                        <div class="select-pricing-option">
-                            <div class="option-box-1">
-                                <div class="check-it">
-                                    <span>
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
-                                            fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
+
+                        <div class="br-ling"></div>
+
+                        <div class="supplier-wrapper-box">
+                            <div class="input-boxes">
+                                <label for=""> Tax Information </label>
+                                <textarea name="">Any possible tax details will be shown here</textarea>
+                            </div>
+                        </div>
+
+                        <div class="br-ling"></div>
+
+                        <div class="supplier-wrapper-box">
+                            <div class="import-supplier-product">
+                                <div class="drag-drop-here">
+                                    <span class="import-icon">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
-                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                                d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path fill-rule="evenodd"
+                                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                                         </svg>
                                     </span>
+                                    <p>
+                                        Drag & Drop here <br>
+                                        or <br>
+                                        <span> Upload File </span>
+                                    </p>
+
                                 </div>
-                                <span class="check-box-name">Pre-Paid</span>
-                            </div>
-                            <div class="option-box-1">
-                                <div class="check-it">
-                                    <span>
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
-                                            fill="#17B0C3" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                                        </svg>
-                                    </span>
-                                </div>
-                                <span class="check-box-name">Price Protection</span>
-                            </div>
-                        </div>
-                        <div class="input-boxes">
-                            <label for=""> Tax Information </label>
-                            <input type="text" value="156 916 8776">
-                        </div>
-                    </div>
-
-                    <div class="br-ling"></div>
-
-                    <div class="supplier-wrapper-box">
-                        <div class="input-boxes">
-                            <label for=""> Tax Information </label>
-                            <textarea name="">Any possible tax details will be shown here</textarea>
-                        </div>
-                    </div>
-
-                    <div class="br-ling"></div>
-
-                    <div class="supplier-wrapper-box">
-                        <div class="import-supplier-product">
-                            <div class="drag-drop-here">
-                                <span class="import-icon">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                        <path fill-rule="evenodd"
-                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
-                                    </svg>
-                                </span>
-                                <p>
-                                    Drag & Drop here <br>
-                                    or  <br>
-                                    <span> Upload File </span>
-                                </p>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
 
