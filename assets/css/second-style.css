@@ -594,9 +594,11 @@
     position: absolute;
     top: 50%;
     right: 10px;
+    z-index: 9;
 }
 
 .input-boxes input {
+    position: relative;
     width: 100%;
     padding: 10px 12px;
     font-size: 12px;
@@ -605,6 +607,7 @@
     border: 1px solid #9D9D9D;
     border-radius: 3px;
     background: transparent;
+    z-index: 99;
 }
 
 .modal-selector-1 {
@@ -926,7 +929,7 @@
 }
 
 .pricing-details-boxes .br-ling {
-    margin: 0 30px;
+    margin: 30px;
 }
 
 .supplier-wrapper-box textarea {
@@ -1623,6 +1626,7 @@ td .check-it {
 
 .input-boxes-drop-down-1 input {
     cursor: pointer !important;
+    z-index: 99;
 }
 
 .input-boxes-selector-option {
@@ -1631,7 +1635,7 @@ td .check-it {
     box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.11);
     padding: 10px 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
     top: 66px;
     display: none;
 }

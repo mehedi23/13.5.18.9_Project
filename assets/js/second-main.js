@@ -298,6 +298,10 @@ $('.registered-address-check-box').click(function () {
             $('#c-registered-address-country').val(`${ country_address.val() }`);
             console.log($(this).val())
         });
+        $('#m-registered-address-country-select').click(function(){
+            $('#c-registered-address-country').val(`${ country_address.val() }`);
+            console.log($(this).val())
+        });
 
         registered_address_check = true;
 
@@ -307,7 +311,7 @@ $('.registered-address-check-box').click(function () {
         second_address.off('keyup');
         city_address.off('keyup');
         state_address.off('keyup');
-
+        $('#m-registered-address-country-select').off('click')
         registered_address_check = false;
     };
 });
@@ -327,4 +331,13 @@ $(".section-title-slide-click").click(function(){
     $(this).parents('section').find('.section-full-info-wrapper').slideToggle(350);
     $(this).parents('.section-header-1').toggleClass('margin-zero');
     $(this).find('span').toggleClass('rotating-90')
-})
+});
+
+$('.delate-chosen-values').click(function(){
+    if( $('.appending-chosen-value-boxes').is(':visible') ){
+        
+    } else{
+        $('.appending-chosen-value').removeClass('display-grid')
+    }
+});
+
