@@ -67,8 +67,12 @@
 }
 
 .product-menu .product-title-menu {
-    background: #F3F4FA;
     color: #17B0C3;
+    transition: .3s;
+}
+
+.product-menu .product-title-menu:hover{
+    background-color: #F3F4FA;
 }
 
 .product-sub-menus {
@@ -1614,6 +1618,10 @@ td .check-it {
 
 .font-wet-normal{
     font-weight: 400 !important;
+}
+
+.bg-slide-effect{
+    background: #F3F4FA;
 }
 
 

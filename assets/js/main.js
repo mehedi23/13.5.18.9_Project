@@ -112,7 +112,7 @@ $('.mobile-bg').click(function () {
 })
 
 
-$('.abdc').owlCarousel({
+$('.clints-table-slider').owlCarousel({
     loop: false,
     margin: 15,
     nav: true,
@@ -126,7 +126,7 @@ $('.abdc').owlCarousel({
             items: 2
         }
     }
-})
+});
 
 $('.medial-items').owlCarousel({
     loop: false,
@@ -135,19 +135,23 @@ $('.medial-items').owlCarousel({
     dots: false,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            slideBy: 1
         },
         600: {
-            items: 2
+            items: 2,
+            slideBy: 2
         },
         1170: {
-            items: 3
+            items: 3,
+            slideBy: 3
         },
         1470: {
-            items: 4
+            items: 4,
+            slideBy: 4
         }
     }
-})
+});
 
 $('.info').hover(function () {
     $('.info-details').fadeToggle(300)
@@ -188,6 +192,7 @@ $('.drop-down-supplier-inputs input').click(function () {
     $(this).parents('.supplier-input-select-option-wrapper').find('.supplier-input-select-option').val(`${ the_val }`)
 });
 
+
 $('body').on('change', '.drag-drop input', function () {
 
     if (this.files && this.files[0]) {
@@ -220,27 +225,20 @@ $('body').on('change', '.drag-drop input', function () {
         };
         reader.readAsDataURL(this.files[0]);
     };
-
 });
 
-var media_item_boxes = document.querySelectorAll('.media-items-img');
 
-for (let i = 0; i < media_item_boxes.length; i++) {
-    media_item_boxes[i].onclick = function () {
-        if (i !== 0) {
-            $('body').on('click', ".remove-media-pic", function () {
-                $(this).parents('.media-items-img').trigger('remove.owl.carousel', [i]).trigger('refresh.owl.carousel');
-            });
 
-            console.log(i)
-        };
-        console.log(i)
-    };
-};
+$('body').on('click', ".remove-media-pic", function (e) {
+    $(this).parents('.media-items-img').parents('.owl-item').hide();
+    var hiddenElements = $(".medial-items").find(".owl-item:visible");
 
-// $('body').on('click', ".remove-media-pic", function () {
-//     $(this).parents('.media-items-img').trigger('remove.owl.carousel', 0).trigger('refresh.owl.carousel');
-// });
+    if (hiddenElements.length < 5) {
+        $('.media-slider .owl-nav').addClass('disabled');
+    }
+});
+
+
 
 var main_phone_img = $('#product-details .product-review .product-model .product-model-details .model-img img');
 
@@ -249,4 +247,3 @@ $('body').on('click', '.make-as-default button', function () {
     main_phone_img.attr("src", ` ${this_img_address} `)
     $('.media-default-img').attr("src", ` ${this_img_address} `);
 });
-

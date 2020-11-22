@@ -310,6 +310,9 @@
     #clints .clints-wrapper .tables-slider{
         width: 100% !important;
     }
+    #clints .clints-wrapper .tables-slider .br-ling{
+        display: none;
+    }
     #clints .clints-wrapper .clints-boxes table tr td {
         font-size: 10px;
     }
@@ -319,6 +322,23 @@
     }
     #clints .clints-wrapper .clints-boxes table tr .discount {
         min-width: 13%;
+    }
+    .clints-boxes{
+        margin: 0 !important;
+    }
+    #clints .clints-wrapper .clints-boxes table{
+        width: 360px;
+    }
+    #clints .clints-wrapper .clints-boxes table tr .discount {
+        min-width: auto;
+        width: 18%;
+    }
+    #clints .clints-wrapper .clints-boxes table tr .selling {
+        width: 32%;
+    }
+    #clints .clints-wrapper .clints-boxes table tr .name{
+        min-width: auto;
+        width: 45%;
     }
     #product-additional-info .section-show .product-additional-boxes .additional-terms{
         height: 300px;
@@ -410,6 +430,10 @@
         width: 75px;
     }
 
+    #clints .clints-wrapper .clints-boxes table{
+        width: 360px;
+    }
+
 
 }
 
@@ -420,6 +444,30 @@
 
     .clints-boxes {
         margin-left: 20px;
+    }
+
+    #clints .clints-wrapper .clints-boxes table{
+        width: 310px;
+    }
+
+    #clints .clints-wrapper .clints-boxes table tr .discount {
+        min-width: auto;
+        width: 20%;
+    }
+    #clints .clints-wrapper .clints-boxes table tr .selling {
+        width: 38%;
+    }
+    #clints .clints-wrapper .clints-boxes table tr .name{
+        min-width: auto;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+
+    #clints .clints-wrapper .clints-boxes table{
+        width: 100%;
     }
 
 }
