@@ -198,44 +198,49 @@ $('body').on('change', '.drag-drop input', function () {
     if (this.files && this.files[0]) {
         var reader = new FileReader();
 
-        reader.onload = function (e) {
-            var the_src_url = e.target.result;
+        var data_attr = $('.media-items-img').length + 1;
 
-            $('.medial-items').trigger('add.owl.carousel', [`
-                <div class="media-items-img">
-                    <div class="remove-media-pic">
-                        <svg width="1em" height="1em" viewBox="0 0 100 100" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="48.5" fill="white" stroke="#979797"
-                                stroke-width="3" />
-                            <line y1="-1.5" x2="78.759" y2="-1.5"
-                                transform="matrix(0.67652 0.736424 -0.724568 0.689203 22 21)"
-                                stroke="#979797" stroke-width="3" />
-                            <line y1="-1.5" x2="78.759" y2="-1.5"
-                                transform="matrix(0.676528 -0.736417 0.724561 0.689211 25.7174 78.9994)"
-                                stroke="#979797" stroke-width="3" />
-                        </svg>
+        for (let i = 0; i < data_attr; i++) {
+            reader.onload = function (e) {
+                var the_src_url = e.target.result;
+
+                $('.medial-items').trigger('add.owl.carousel', [`
+                    <div class="media-items-img" data-i-num= ${i} >
+                        <div class="remove-media-pic">
+                            <svg width="1em" height="1em" viewBox="0 0 100 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48.5" fill="white" stroke="#979797"
+                                    stroke-width="3" />
+                                <line y1="-1.5" x2="78.759" y2="-1.5"
+                                    transform="matrix(0.67652 0.736424 -0.724568 0.689203 22 21)"
+                                    stroke="#979797" stroke-width="3" />
+                                <line y1="-1.5" x2="78.759" y2="-1.5"
+                                    transform="matrix(0.676528 -0.736417 0.724561 0.689211 25.7174 78.9994)"
+                                    stroke="#979797" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <img src="${the_src_url}" alt="">
+                        <div class="make-as-default">
+                            <button>Make Default</button>
+                        </div>
                     </div>
-                    <img src="${the_src_url}" alt="">
-                    <div class="make-as-default">
-                        <button>Make Default</button>
-                    </div>
-                </div>
-            `]).trigger('refresh.owl.carousel');
+                `]).trigger('refresh.owl.carousel');
+            };
         };
         reader.readAsDataURL(this.files[0]);
     };
 });
 
 
+$('body').on('click', ".remove-media-pic", function () {
 
-$('body').on('click', ".remove-media-pic", function (e) {
-    $(this).parents('.media-items-img').parents('.owl-item').hide();
-    var hiddenElements = $(".medial-items").find(".owl-item:visible");
+    var i_num = $(this).parents('.media-items-img').data('iNum');
+    
+    $(".medial-items").trigger('remove.owl.carousel', [i_num]).trigger('refresh.owl.carousel');
 
-    if (hiddenElements.length < 5) {
-        $('.media-slider .owl-nav').addClass('disabled');
-    }
+    $.each($('.media-items-img'), function (index, useIt_item) {
+        $(useIt_item).attr('data-i-num', `${index}` );
+    });
 });
 
 

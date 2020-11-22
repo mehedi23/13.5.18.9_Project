@@ -714,9 +714,11 @@
 .catalogues-option-icon {
     position: absolute;
     top: 0;
+    font-size: 14px;
     right: 3px;
     color: #444444;
     display: none;
+    opacity: 0.9;
 }
 
 .fas.fa-ellipsis-v.catalogues {
@@ -1286,6 +1288,7 @@ td .check-it {
 
 .the-master-catalogue-table {
     padding: 30px 20px;
+    position: relative;
 }
 
 #add-new-product-modal {
@@ -1335,6 +1338,7 @@ td .check-it {
     width: 100%;
     background-color: #fff;
     position: relative;
+    min-height: 100vh;
 }
 
 .modal_close_btn {
@@ -1456,6 +1460,11 @@ td .check-it {
 
 .all-master-catalogue-list:hover .table-list-upgrading-option {
     opacity: 1;
+}
+
+.table-drop-down-option-a{
+    position: absolute;
+    right: 10px;
 }
 
 
@@ -1620,6 +1629,10 @@ td .check-it {
     font-weight: 400 !important;
 }
 
+.font-wet-b{
+    font-weight: 700 !important;
+}
+
 .bg-slide-effect{
     background: #F3F4FA;
 }
@@ -1684,4 +1697,5 @@ td .check-it {
 
 .section-title-slide-click{
     cursor: pointer !important;
+    text-transform: uppercase;
 }

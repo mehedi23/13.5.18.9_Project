@@ -429,9 +429,10 @@ a:hover {
 }
 
 #product-details .product-review .product-model .product-model-details .model-img {
-  width: 200px;
-  height: 200px;
+  width: 235px;
+  height: 235px;
   overflow: hidden;
+  margin-right: 45px;
 }
 
 #product-details .product-review .product-model .product-model-details .model-img img {
@@ -439,7 +440,7 @@ a:hover {
 }
 
 #product-details .product-review .product-model .product-model-details .model-config p {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.47px;
   color: #444444;
@@ -1161,7 +1162,8 @@ a:hover {
 }
 
 #clints .clints-wrapper .br-ling {
-  margin: 20px 20px 0 20px;
+  margin: 50px 20px 0 20px;
+  height: 242px;
 }
 
 #clints .clints-wrapper .clints-boxes-img {
@@ -1446,11 +1448,12 @@ a:hover {
 
 .media-items-img p {
   position: absolute;
-  font-size: 14px;
+  font-size: 17px;
   color: #17B0C3;
   letter-spacing: 0.3px;
   font-weight: bold;
-  bottom: -25px;
+  bottom: -30px;
+  text-transform: uppercase;
 }
 
 .make-as-default {
