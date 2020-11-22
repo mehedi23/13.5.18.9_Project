@@ -56,10 +56,22 @@ $('.multi-option .main-check-box').click(function () {
 
 // replace-remove-btn
 
+
 $('.replace-remove-btn').click(function () {
-    $(this).parents('.replace-remove').find('.show-replace-remove').slideToggle(200);
-    $(this).toggleClass('d-inline')
-})
+    if ($('.show-replace-remove').is(':visible')) {
+
+        $('.show-replace-remove').slideUp(200);
+        $('.replace-remove-btn').removeClass('d-inline');
+
+        if ($(this).parents('.replace-remove').find('.show-replace-remove').is(':hidden')) {
+            $(this).parents('.replace-remove').find('.show-replace-remove').slideDown(200);
+            $(this).addClass('d-inline')
+        }
+    } else {
+        $(this).parents('.replace-remove').find('.show-replace-remove').slideDown(200);
+        $(this).addClass('d-inline');
+    }
+});
 
 // 
 
@@ -235,11 +247,11 @@ $('body').on('change', '.drag-drop input', function () {
 $('body').on('click', ".remove-media-pic", function () {
 
     var i_num = $(this).parents('.media-items-img').data('iNum');
-    
+
     $(".medial-items").trigger('remove.owl.carousel', [i_num]).trigger('refresh.owl.carousel');
 
     $.each($('.media-items-img'), function (index, useIt_item) {
-        $(useIt_item).attr('data-i-num', `${index}` );
+        $(useIt_item).attr('data-i-num', `${index}`);
     });
 });
 

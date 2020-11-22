@@ -139,7 +139,7 @@ $('.enable-disable').click(function () {
     $(this).parents('.catalogue-boxes').find('.catalogues-option-icon').toggleClass('click-disable');
     $(this).parents('.catalogue-boxes').find('.catalogues-option-list').toggleClass('click-disable');
 
-})
+});
 
 $('.check-it').click(function () {
     $(this).find('span').toggleClass('d-inline');
@@ -147,9 +147,20 @@ $('.check-it').click(function () {
 })
 
 $('.fas.fa-ellipsis-v.catalogues').click(function () {
-    $(this).parents('.catalogue-boxes').find('.catalogues-option-list').slideToggle(200);
-    $(this).parents('.catalogues-option-icon').toggleClass('d-inline')
-})
+    if ($('.catalogues-option-list').is(':visible')) {
+
+        $('.catalogues-option-list').slideUp(200);
+        $('.catalogues-option-icon').removeClass('d-inline');
+
+        if ($(this).parents('.catalogue-boxes').find('.catalogues-option-list').is(':hidden')) {
+            $(this).parents('.catalogue-boxes').find('.catalogues-option-list').slideDown(200);
+            $(this).parents('.catalogues-option-icon').addClass('d-inline')
+        }
+    } else {
+        $(this).parents('.catalogue-boxes').find('.catalogues-option-list').slideDown(200);
+        $(this).parents('.catalogues-option-icon').addClass('d-inline');
+    }
+});
 
 $('.input-select-drop-down').click(function () {
     $(this).parents('.input-boxes').find('.input-select-options-1').slideToggle(200);
