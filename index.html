@@ -286,14 +286,14 @@
                         <div class="info-listing ">
                             <label for="">SKU ID</label>
                             <div class="the-input">
-                                <input class="font-wet-b" type="button" value="APL05-BLK-64">
+                                <input class="font-wet-b edit-input" type="button" value="APL05-BLK-64">
                                 <span class="edit-able"> edit </span>
                             </div>
                         </div>
                         <div class="info-listing">
                             <label for="">Product Name</label>
                             <div class="the-input">
-                                <input class="font-wet-normal" type="button" value="iPhone XX">
+                                <input class="font-wet-normal edit-input" type="button" value="iPhone XX">
                                 <span class="edit-able"> edit </span>
                             </div>
                         </div>
@@ -885,95 +885,101 @@
                             </div>
                         </div>
                         <div class="br-ling"></div>
-                        <button class="add-new-supplier" data-toggle="modal" data-target="#exampleModal"> Add New
+                        <button class="add-new-supplier" data-toggle="modal" data-target="#add-new-supplier-modal"> Add
+                            New
                             Supplier </button>
                     </div>
 
-                    <div class="supplier-modal" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="add-new-supplier-modal" tabindex="-1"
+                        aria-labelledby="add-new-supplier-modal-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
 
-                        <div class="d-flex justify-content-end">
-                            <div class="add-supplier">
-                                <span class="close-icon" data-dismiss="modal">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                    </svg>
-                                </span>
-                                <h3> Add Supplier to Apple iphone X </h3>
-                                <p class="model"> APL03-BLK-64 </p>
-                                <p class="note-result"> Following suppliers are providing this product in your region.
-                                    Select a supplier from the list. </p>
+                                <div class="d-flex justify-content-end">
+                                    <div class="add-supplier">
+                                        <span class="close-icon" data-dismiss="modal">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </span>
+                                        <h3> Add Supplier to Apple iphone X </h3>
+                                        <p class="model"> APL03-BLK-64 </p>
+                                        <p class="note-result"> Following suppliers are providing this product in your
+                                            region.
+                                            Select a supplier from the list. </p>
 
-                                <div class="supplier-add-table">
-                                    <table>
-                                        <tbody>
-                                            <tr class="table-title">
-                                                <td class="title"> Supplier Name </td>
-                                                <td class="title"> Supplier ID </td>
-                                                <td class="title"> Price Offered </td>
-                                            </tr>
+                                        <div class="supplier-add-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="table-title">
+                                                        <td class="title"> Supplier Name </td>
+                                                        <td class="title"> Supplier ID </td>
+                                                        <td class="title"> Price Offered </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> Amazon </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
+                                                    <tr>
+                                                        <td> Amazon </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> Daraz </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
+                                                    <tr>
+                                                        <td> Daraz </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> Souq </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
+                                                    <tr>
+                                                        <td> Souq </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> Target </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
+                                                    <tr>
+                                                        <td> Target </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> ASDA </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
+                                                    <tr>
+                                                        <td> ASDA </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td> Tesco </td>
-                                                <td> APL05-BLK-64 </td>
-                                                <td> AED 4000 </td>
-                                                <td class="right-icon"> <i class="fas fa-check"></i> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                    <tr>
+                                                        <td> Tesco </td>
+                                                        <td> APL05-BLK-64 </td>
+                                                        <td> AED 4000 </td>
+                                                        <td class="right-icon"> <i class="fas fa-check"></i> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                <div class="make-default">
-                                    <div class="check-box" data-default="1">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                                        </svg>
+                                        <div class="make-default">
+                                            <div class="check-box" data-default="1">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                                </svg>
+                                            </div>
+                                            <span>Make him a default supplier</span>
+                                        </div>
+
+                                        <div class="confirm-btn">
+                                            <button> Yes </button>
+                                            <button> Add </button>
+                                        </div>
                                     </div>
-                                    <span>Make him a default supplier</span>
-                                </div>
-
-                                <div class="confirm-btn">
-                                    <button> Yes </button>
-                                    <button> Add </button>
                                 </div>
                             </div>
                         </div>
@@ -1433,8 +1439,7 @@
                             <div class="input-boxes-drop-down-1">
                                 <div class="input-boxes">
                                     <label for=""> Cost Type </label>
-                                    <input class="text-left input-boxes-selector-1" 
-                                        type="button" value="Delivery">
+                                    <input class="text-left input-boxes-selector-1" type="button" value="Delivery">
                                     <span>
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1456,8 +1461,7 @@
                             <div class="input-boxes-drop-down-1">
                                 <div class="input-boxes">
                                     <label for=""> Delivery Name </label>
-                                    <input class="text-left input-boxes-selector-1" 
-                                        type="button" value="DHL">
+                                    <input class="text-left input-boxes-selector-1" type="button" value="DHL">
                                     <span>
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1479,7 +1483,7 @@
                             <div class="input-boxes-drop-down-1">
                                 <div class="input-boxes">
                                     <label for=""> Fee </label>
-                                    <input class="text-left"  type="text" value="150">
+                                    <input class="text-left" type="text" value="150">
                                 </div>
                             </div>
                         </div>
@@ -1488,8 +1492,7 @@
                             <div class="input-boxes-drop-down-1">
                                 <div class="input-boxes">
                                     <label for=""> Currency </label>
-                                    <input class="text-left input-boxes-selector-1" 
-                                        type="button" value="AED">
+                                    <input class="text-left input-boxes-selector-1" type="button" value="AED">
                                     <span>
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1511,8 +1514,7 @@
                             <div class="input-boxes-drop-down-1">
                                 <div class="input-boxes">
                                     <label for=""> VAT </label>
-                                    <input class="text-left"  type="text"
-                                        value="2.5 %">
+                                    <input class="text-left" type="text" value="2.5 %">
                                 </div>
                             </div>
                         </div>

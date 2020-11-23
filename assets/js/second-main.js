@@ -172,7 +172,20 @@ $('.input-select-options-1 input').click(function () {
 })
 
 $('.table-list-upgrading-option').click(function () {
-    $(this).find('.table-list-upgrading-drop-down').slideToggle(200);
+
+    if ($('.table-list-upgrading-drop-down').is(':visible')) {
+
+        $('.table-list-upgrading-drop-down').slideUp(200);
+        $('.table-list-upgrading-option').removeClass('opacity-showing');
+
+        if ($(this).find('.table-list-upgrading-drop-down').is(':hidden')) {
+            $(this).find('.table-list-upgrading-drop-down').slideDown(200);
+            $(this).addClass('opacity-showing');
+        }
+    } else {
+        $(this).find('.table-list-upgrading-drop-down').slideDown(200);
+        $(this).addClass('opacity-showing');
+    }
 });
 
 // +++++++++++++++++++++++++++++++++++++++++++++
@@ -260,6 +273,17 @@ $(document).click(function (e) {
         $('.catalogues-option-list').slideUp(200);
         $('.catalogues-option-icon').removeClass('d-inline')
     }
+
+    if (e.target.className !== "table-list-upgrading-option opacity-showing") {
+        $('.table-list-upgrading-drop-down').slideUp(200);
+        $('.table-list-upgrading-option').removeClass('opacity-showing')
+    }
+
+    if (e.target.className !== "edit-able opacity-showing d-block" && e.target.className !== "font-wet-b edit-input" && e.target.className !== "font-wet-normal edit-input" ) {
+        $('.edit-able').removeClass('opacity-showing d-block');
+        $('.edit-input').attr('type','button');
+    }
+
     //console.log(e.target.className)
 })
 
@@ -318,11 +342,9 @@ $('.registered-address-check-box').click(function () {
 
         country_address.click(function () {
             $('#c-registered-address-country').val(`${ country_address.val() }`);
-            console.log($(this).val())
         });
         $('#m-registered-address-country-select').click(function () {
             $('#c-registered-address-country').val(`${ country_address.val() }`);
-            console.log($(this).val())
         });
 
         registered_address_check = true;
@@ -340,7 +362,7 @@ $('.registered-address-check-box').click(function () {
 
 
 $('.en-dis-btn-1').click(function () {
-    $(this).toggleClass('en-dis-btn')
+    $(this).toggleClass('en-dis-btn');
 })
 
 
@@ -362,3 +384,11 @@ $('.delate-chosen-values').click(function () {
         $('.appending-chosen-value').removeClass('display-grid')
     }
 });
+
+
+
+// =============
+$('.edit-able').click(function(){
+    $(this).toggleClass('opacity-showing d-block');
+    $(this).parents('.info-listing').find('.edit-input').attr('type','text');
+})

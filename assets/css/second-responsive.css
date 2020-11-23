@@ -73,6 +73,12 @@
     }
 }
 
+@media screen and (max-width: 991px){
+    
+    .table-list-upgrading-option{
+        opacity: 1 !important;
+    }
+}
 
 @media screen and (max-width: 950px){
     .the-master-catalogue-table{
@@ -92,6 +98,10 @@
     .commercial-contact-boxes .commercial-table{
         width: 50% !important;
     }
+    .table-drop-down-option-a{
+        position: relative;
+        right: 0;
+    }
 }
 
 
@@ -109,10 +119,6 @@
 
     .pricing-details-boxes .supplier-wrapper-box{
         width: 45% !important;
-    }
-
-    .table-list-upgrading-option{
-        opacity: 1;
     }
 
     .navigation-area span{
